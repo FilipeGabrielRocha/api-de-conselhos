@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+:root{
+    --LightCyan: #cee3e9;
+    --NeonGreen: #52ffa8;
+    --GrayishBlue: #4e5d73;
+    --DarkGrayishBlue: #323a49;
+    --DarkBlue: #1f2632;
+    --white: #fff;
+    --black: #000;
+    --max-width: 1920px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DarkBlue);
+    height: 100vh;
+    max-width: var(--max-width);
+}
+
+.principal .caixa-conselhos {
+    display: flex;
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--DarkGrayishBlue);
+    width: 450px;
+    /* height: 265px; */
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.principal .caixa-conselhos .titulo {
+    color: var(--NeonGreen);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.principal .caixa-conselhos .conselho {
+    font-size: 2.1rem;
+    text-align: center;
+    color: var(--LightCyan);
+    margin-bottom: 20px;
+}
+
+.principal .botao {
+    display: flex;
+    position: absolute;
+    background-color: var(--NeonGreen);
+    padding: 15px;
+    border-radius: 50%;
+    bottom: -25px;
+    cursor: pointer;
+}
+
+.principal .botao img {
+    width: 20px;
+    height: 20px;
+}
+
+/* REPONSIVO */
+
+@media (max-width: 600px) {
+    .principal .caixa-conselhos {
+        width: 290px;
+    }
+
+    .principal .caixa-conselhos .titulo {
+        font-size: 1rem;
+    }
+
+    .principal .caixa-conselhos .conselho {
+        font-size: 1.7rem;
+    }
+}

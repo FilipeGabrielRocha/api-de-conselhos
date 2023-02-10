@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="src/favicon/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>API Gerador de Conselhos</title>
+</head>
+<body>
+    <main class="principal">
+        <section class="caixa-conselhos">
+            <h1 id="idTituloConselho" class="titulo"></h1>
+
+            <p id="conselho" class="conselho"></p>
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="src/image/pattern-divider-mobile.svg">
+                <img src="src/image/pattern-divider-desktop.svg" alt="irina-blok">
+            </picture>
+            
+            <div id="botao" class="botao">
+                <img src="src/image/icon-dice.svg" alt="botao">
+            </div>
+        </section>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>
