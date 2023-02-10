@@ -24,7 +24,6 @@
 .principal .caixa-conselhos {
     display: flex;
     position: relative;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     background-color: var(--DarkGrayishBlue);
